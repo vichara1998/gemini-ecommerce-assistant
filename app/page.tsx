@@ -88,7 +88,7 @@ const Home = () => {
             const response = await fetch("/api/chat", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ messages: conversation }),
+                body: JSON.stringify({ messages: conversation.slice(-20) }),
             });
 
             if (!response.ok) {
