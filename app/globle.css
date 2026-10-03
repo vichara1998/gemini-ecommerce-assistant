@@ -37,6 +37,25 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body::before {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  background:
+    radial-gradient(
+      680px circle at var(--pointer-x, 50%) var(--pointer-y, 20%),
+      rgba(91, 137, 99, 0.28),
+      transparent 72%
+    ),
+    radial-gradient(
+      440px circle at calc(var(--pointer-x, 50%) + 15%) calc(var(--pointer-y, 20%) + 12%),
+      rgba(215, 125, 97, 0.11),
+      transparent 74%
+  );
+  content: "";
+  pointer-events: none;
+}
+
 button,
 textarea {
   font: inherit;
@@ -54,6 +73,8 @@ textarea:focus-visible {
 }
 
 .site-shell {
+  position: relative;
+  z-index: 1;
   min-height: 100vh;
   padding: 0 6.15vw 24px;
 }
