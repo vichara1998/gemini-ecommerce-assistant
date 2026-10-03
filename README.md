@@ -1,5 +1,19 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
+## Seeding the product knowledge base
+
+Set `GEMINI_API_KEY`, `ASTRA_DB_TOKEN`, `ASTRA_DB_ENDPOINT`, and
+`ASTRA_DB_NAMESPACE` in `.env`, then run:
+
+```bash
+npm run seed
+```
+
+The seed script writes to the `ecommerce_chatbot_vectors` collection. It uses
+`gemini-embedding-001` with 768-dimensional vectors; remove any existing
+vectors created with a different embedding model before reseeding so searches
+do not mix incompatible embedding spaces.
+
 ## Getting Started
 
 First, run the development server:

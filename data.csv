@@ -1,366 +1,358 @@
-1. Lenovo IdeaPad Slim 3
 
-Brand: Lenovo
+//ORDER POLICY
 
-Category: Laptop
-
-Price: $499
-
-Quantity: 120
-
-Warranty: 1 Year
-
-Features: 8GB RAM, 512GB SSD, Intel i5, 15.6" FHD
-
-Description: Lightweight laptop ideal for students and office work.
-
-2. Dell Inspiron 15
-
-Brand: Dell
-
-Category: Laptop
-
-Price: $699
-
-Quantity: 85
-
-Warranty: 1 Year onsite
-
-Features: Intel i5, 16GB RAM, 512GB SSD, Windows 11
-
-Description: Productivity laptop built for multitasking and reliability.
-
-3. HP Pavilion 14
-
-Brand: HP
-
-Category: Laptop
-
-Price: $649
-
-Quantity: 95
-
-Warranty: 1 Year
-
-Features: Intel i7, 8GB RAM, 512GB SSD
-
-Description: Premium laptop for students and light gaming.
-
-4. ASUS VivoBook 16
-
-Brand: ASUS
-
-Category: Laptop
-
-Price: $799
-
-Quantity: 50
-
-Warranty: 1 Year
-
-Features: AMD Ryzen 7, 16GB RAM, 1TB SSD
-
-Description: High-performance ultrabook with slim design.
-
-5. Apple MacBook Air M2
-
-Brand: Apple
-
-Category: Laptop
-
-Price: $1199
-
-Quantity: 45
-
-Warranty: 1 Year
-
-Features: M2 chip, 8GB RAM, 256GB SSD, Retina display
-
-Description: Premium lightweight laptop with long battery life.
-
-📱 SMARTPHONES
-6. Apple iPhone 14
-
-Brand: Apple
-
-Category: Smartphone
-
-Price: $799
-
-Quantity: 160
-
-Warranty: 1 Year
-
-Features: 128GB storage, 5G, OLED display
-
-Description: Popular flagship smartphone with advanced camera.
-
-7. Samsung Galaxy S23
-
-Brand: Samsung
-
-Category: Smartphone
-
-Price: $749
-
-Quantity: 140
-
-Warranty: 1 Year
-
-Features: 12GB RAM, 256GB storage, AMOLED screen
-
-Description: Fast performance with top-tier display.
-
-8. Google Pixel 7
-
-Brand: Google
-
-Category: Smartphone
-
-Price: $699
-
-Quantity: 100
-
-Warranty: 1 Year
-
-Features: 128GB storage, Tensor chip
-
-Description: Pure Android experience with great photo quality.
-
-9. Xiaomi Redmi Note 12 Pro
-
-Brand: Xiaomi
-
-Category: Smartphone
-
-Price: $299
-
-Quantity: 250
-
-Warranty: 1 Year
-
-Features: 8GB RAM, 128GB storage
-
-Description: Budget-friendly model with excellent battery life.
-
-10. OnePlus 11
-
-Brand: OnePlus
-
-Category: Smartphone
-
-Price: $599
-
-Quantity: 130
-
-Warranty: 1 Year
-
-Features: 256GB storage, Snapdragon chipset
-
-Description: Flagship performance at a mid-range price.
-
-🎧 ACCESSORIES
-11. Sony WH-1000XM5 Headphones
-
-Brand: Sony
-
-Category: Headphones
-
-Price: $349
-
-Quantity: 65
-
-Warranty: 1 Year
-
-Features: ANC, Bluetooth 5.2
-
-Description: Industry-leading noise-cancelling headphones.
-
-12. Logitech MX Master 3
-
-Brand: Logitech
-
-Category: Mouse
-
-Price: $99
-
-Quantity: 210
-
-Warranty: 1 Year
-
-Features: Wireless, USB-C charging
-
-Description: Premium ergonomic mouse for productivity.
-
-13. Samsung Galaxy Buds 2
-
-Brand: Samsung
-
-Category: Earbuds
-
-Price: $129
-
-Quantity: 180
-
-Warranty: 1 Year
-
-Features: ANC, Bluetooth
-
-Description: Compact earbuds with great sound quality.
-
-14. Apple AirPods Pro 2
-
-Brand: Apple
-
-Category: Earbuds
-
-Price: $249
-
-Quantity: 70
-
-Warranty: 1 Year
-
-Features: ANC, Spatial audio
-
-Description: Premium earbuds with great noise cancellation.
-
-🖨️ PRINTERS
-15. HP DeskJet 2332
-
-Brand: HP
-
-Category: Printer
-
-Price: $69
-
-Quantity: 300
-
-Warranty: 1 Year
-
-Features: Print/Copy/Scan
-
-Description: Affordable home printer.
-
-16. Canon Pixma G3010
-
-Brand: Canon
-
-Category: Printer
-
-Price: $199
-
-Quantity: 120
-
-Warranty: 1 Year
-
-Features: Ink tank, Wi-Fi
-
-Description: Ideal for high-volume printing.
-
-🖥️ MONITORS
-17. Samsung Odyssey G5
-
-Brand: Samsung
-
-Category: Monitor
-
-Price: $349
-
-Quantity: 80
-
-Warranty: 1 Year
-
-Features: 144Hz, 27-inch
-
-Description: Curved gaming monitor.
-
-18. LG UltraWide 34-Inch
-
-Brand: LG
-
-Category: Monitor
-
-Price: $499
-
-Quantity: 55
-
-Warranty: 1 Year
-
-Features: 34-inch ultrawide display
-
-Description: Great for productivity and multitasking.
-
-🎮 GAMING
-19. Sony PlayStation 5
-
-Brand: Sony
-
-Category: Gaming Console
-
-Price: $499
-
-Quantity: 40
-
-Warranty: 1 Year
-
-Features: 4K gaming, DualSense
-
-Description: Latest-gen gaming console.
-
-20. Xbox Series X
-
-Brand: Microsoft
-
-Category: Gaming Console
-
-Price: $499
-
-Quantity: 42
-
-Warranty: 1 Year
-
-Features: 4K, Game Pass support
-
-Description: High-power console for immersive gaming.
-
-id,category,brand,model,price,stock,description,text
-1,Smartphone,Apple,iPhone 14,899,25,"128GB, Blue, 12MP Camera","Apple iPhone 14 - 128GB Blue. Price $899. Stock 25 units."
-2,Smartphone,Apple,iPhone 14,999,12,"256GB, Red, 12MP Camera","Apple iPhone 14 - 256GB Red. Price $999. Stock 12 units."
-3,Smartphone,Samsung,Galaxy S23,799,30,"256GB AMOLED Display 12GB RAM","Samsung Galaxy S23 - 256GB, 12GB RAM. Price $799. Stock 30 units."
-4,Smartphone,Samsung,Galaxy A54,399,50,"128GB, 6GB RAM, AMOLED","Samsung Galaxy A54 - 128GB. Price $399. Stock 50 units."
-5,Laptop,Lenovo,IdeaPad Slim 3,550,17,"8GB RAM, 512GB SSD, 15.6-inch","Lenovo IdeaPad Slim 3 - 8GB RAM, 512GB SSD. Price $550. Stock 17 units."
-6,Laptop,HP,Pavilion 14,720,15,"16GB RAM, 512GB SSD, FHD","HP Pavilion 14 - 16GB RAM, 512GB SSD. Price $720. Stock 15 units."
-7,Laptop,Dell,Inspiron 15,690,20,"8GB RAM, 1TB HDD","Dell Inspiron 15 - 8GB RAM, 1TB HDD. Price $690. Stock 20 units."
-8,Laptop,Asus,VivoBook 16,640,18,"16GB RAM, 512GB SSD","Asus VivoBook 16 - 16GB RAM, 512GB SSD. Price $640. Stock 18 units."
-9,Smartwatch,Apple,Watch Series 9,450,22,"GPS, 41mm, Blue","Apple Watch Series 9 - GPS 41mm. Price $450. Stock 22 units."
-10,Smartwatch,Samsung,Galaxy Watch 6,320,28,"Bluetooth, Black","Samsung Galaxy Watch 6 - Bluetooth. Price $320. Stock 28 units."
-11,Headphone,Sony,WH-1000XM5,349,40,"Wireless Noise Cancelling","Sony WH-1000XM5 - Wireless NC. Price $349. Stock 40 units."
-12,Headphone,Bose,QC45,329,35,"Noise Cancelling","Bose QC45 Headphones - Price $329. Stock 35 units."
-13,Headphone,JBL,Live 660NC,199,50,"ANC, Bluetooth","JBL Live 660NC - ANC Bluetooth. Price $199. Stock 50 units."
-14,Keyboard,Logitech,K380,45,60,"Wireless Multi-Device","Logitech K380 - Wireless Keyboard. Price $45. Stock 60 units."
-15,Mouse,Logitech,MX Master 3,99,44,"Ergonomic USB-C","Logitech MX Master 3. Price $99. Stock 44 units."
-16,Monitor,Samsung,Odyssey G5,299,12,"144Hz, 27-inch curved","Samsung Odyssey G5 - 27-inch 144Hz. Price $299. Stock 12 units."
-17,Monitor,LG,UltraGear 24GQ,220,18,"144Hz, IPS","LG UltraGear 24GQ 24-inch. Price $220. Stock 18 units."
-18,Tablet,Apple,iPad 10th Gen,449,25,"64GB Wi-Fi","Apple iPad 10th Gen - 64GB. Price $449. Stock 25 units."
-19,Tablet,Samsung,Galaxy Tab S9,799,10,"256GB, AMOLED","Samsung Galaxy Tab S9 - 256GB. Price $799. Stock 10 units."
-20,Camera,Canon,EOS M50 Mark II,599,7,"Mirrorless, 4K","Canon EOS M50 Mark II - 4K Camera. Price $599. Stock 7 units."
-21,Camera,Sony,A6400,899,5,"APS-C Mirrorless","Sony A6400 - Mirrorless Camera. Price $899. Stock 5 units."
-22,TV,Samsung,Crystal UHD 55",499,6,"4K HDR","Samsung 55-inch Crystal UHD 4K TV. Price $499. Stock 6 units."
-23,TV,LG,NanoCell 50",529,8,"4K Smart TV","LG 50-inch NanoCell 4K Smart TV. Price $529. Stock 8 units."
-24,Accessory,Apple,AirPods Pro 2,249,55,"ANC earbuds","AirPods Pro 2 - ANC. Price $249. Stock 55 units."
-25,Accessory,Samsung,Galaxy Buds 2 Pro,179,48,"ANC earbuds","Samsung Galaxy Buds 2 Pro. Price $179. Stock 48 units."
-26,Console,Sony,PlayStation 5,499,14,"Digital Edition","Sony PlayStation 5 Digital Edition. Price $499. Stock 14 units."
-27,Console,Microsoft,Xbox Series X,499,10,"1TB SSD","Xbox Series X - 1TB. Price $499. Stock 10 units."
-28,Console,Nintendo,Switch OLED,349,22,"7-inch OLED","Nintendo Switch OLED. Price $349. Stock 22 units."
-29,Home Appliance,Philips,Air Fryer XL,199,30,"Rapid Air Technology","Philips XL Air Fryer. Price $199. Stock 30 units."
-30,Home Appliance,LG,Front Load Washer,699,4,"6 Motion Direct Drive","LG Front Load Washer. Price $699. Stock 4 units."
-31,Home Appliance,Panasonic,Microwave Oven,129,12,"1000W","Panasonic Microwave Oven 1000W. Price $129. Stock 12 units."
-32,Storage,WD,Blue SSD 1TB,89,34,"SATA 2.5-inch","WD Blue 1TB SSD. Price $89. Stock 34 units."
-33,Storage,Seagate,Barracuda 2TB,69,40,"HDD","Seagate Barracuda 2TB HDD. Price $69. Stock 40 units."
-34,Networking,TP-Link,Archer AX73,129,18,"Wi-Fi 6 Router","TP-Link Archer AX73 Wi-Fi 6 Router. Price $129. Stock 18 units."
-35,Networking,Netgear,Nighthawk AX8,199,10,"Wi-Fi 6","Netgear Nighthawk AX8 Wi-Fi 6 Router. Price $199. Stock 10 units."
-36,Printer,HP,DeskJet 4155e,129,12,"Wireless Color Printer","HP DeskJet 4155e Printer. Price $129. Stock 12 units."
-37,Printer,Canon,PIXMA G3020,199,8,"Refillable Ink Tank","Canon PIXMA G3020 Printer. Price $199. Stock 8 units."
-38,Gaming,Razer,DeathAdder V3,69,25,"Wired Gaming Mouse","Razer DeathAdder V3 - Wired Gaming Mouse. Price $69. Stock 25 units."
-39,Gaming,Asus,ROG Strix Scope,139,14,"Mechanical Keyboard","Asus ROG Strix Scope Keyboard. Price $139. Stock 14 units."
-40,Gaming,Logitech,G502 Hero,49,40,"Wired, 25K Sensor","Logitech G502 Hero - Wired Mouse. Price $49. Stock 40 units."
+"Order Policy: Orders are processed within 24 hours and shipped within 2–3 business days.",
+"Order Policy: Pre-orders may take 7–14 days depending on supplier availability.",
+"Order Policy: Orders placed after 6 PM will be processed the next business day.",
+"Order Policy: High-demand items may require additional verification before shipping.",
+"Order Policy: Orders cannot be combined once placed.",
+"Order Policy: Items in the same order may ship from different warehouses.",
+"Order Policy: Out-of-stock items will automatically be backordered.",
+"Order Policy: Gift orders do not include price details on the invoice.",
+"Order Policy: Bulk orders may require 2–4 extra processing days.",
+"Order Policy: Orders may be delayed due to weather, fuel issues, or courier delays.",
+"Order Policy: Signature may be required upon delivery for high-value items.",
+
+
+//RETURN POLICY
+
+"Return Policy: Most items can be returned within 30 days for a full refund.",
+"Return Policy: Returned items must be in original packaging with all accessories.",
+"Return Policy: Return pickup will be scheduled within 2–3 business days.",
+"Return Policy: Perishable items and gift cards are non-returnable.",
+"Return Policy: A restocking fee may apply for opened electronics.",
+"Return Policy: Apparel can be exchanged for size within 15 days.",
+"Return Policy: Refunds are initiated only after quality inspection.",
+
+//REFUND TIMELINE
+
+"Refund Timeline: Refunds take 5–7 business days to appear in your bank account.",
+"Refund Timeline: Card refunds may take 7–10 working days depending on the bank.",
+"Refund Timeline: Refund status can be tracked under 'Refund Details'.",
+
+//REPLACEMENT POLICY
+
+"Replacement Policy: Replacements are issued for damaged or defective items after approval.",
+
+//SHIPPING POLICY (Sri Lanka)
+
+"Shipping: Free shipping on orders above Rs. 15,000.",
+"Shipping: Express delivery available for an extra fee.",
+"Shipping: International shipping takes 7–12 business days.",
+"Shipping: Tracking numbers are generated within 24 hours after dispatch.",
+"Shipping: Weekend deliveries depend on local courier availability.",
+"Shipping: Delays may occur during holidays or peak seasons.",
+"Shipping: Fragile items are shipped with extra protective packaging.",
+"Shipping: PO box addresses may not be eligible for all couriers.",
+"Shipping: Cash on Delivery is not available for express shipping.",
+"Shipping: Split shipments may occur due to multiple warehouse locations.",
+"Shipping: Courier partners will retry delivery up to 3 times.",
+
+//PAYMENT METHODS (Sri Lanka-Adjusted)
+
+"Payment Methods: We accept Visa, Mastercard, Amex, PayPal, and Cash on Delivery.",
+"Payment Methods: Apple Pay and Google Pay are supported.",
+"Payment Methods: Bank transfers available for major Sri Lankan banks.",
+"Payment Methods: EMI is available for orders above Rs. 60,000.",
+"Payment Methods: Pay Later options available for eligible customers.",
+"Payment Methods: Failed payments may require browser cache clearing.",
+"Payment Methods: International cards are accepted.",
+"Payment Methods: COD is limited to orders under Rs. 90,000.",
+"Payment Methods: Wallet payments like FriMi and Genie allow instant refunds.",
+"Payment Methods: UPI payment methods supported where available.",
+
+//WARRANTY
+
+"Warranty: Electronics include a 1-year manufacturer warranty.",
+"Warranty: Accessories include a 6-month limited warranty.",
+"Warranty: Refurbished products include a 6-month seller warranty.",
+"Warranty: Warranty does not cover physical or accidental damage.",
+"Warranty: Customers must register products to activate extended warranty.",
+"Warranty: Warranty claims require the purchase invoice.",
+
+//CANCELLATION POLICY
+
+"Cancellation Policy: Orders can be canceled within 2 hours after placing.",
+"Cancellation Policy: Pre-orders can be canceled before production starts.",
+"Cancellation Policy: Subscription renewals can be canceled anytime.",
+"Cancellation Policy: Cancellations are not allowed once shipped.",
+"Cancellation Policy: COD orders may require phone verification to cancel.",
+
+//ORDER TRACKING
+
+"Track Order Instructions: Go to 'My Orders' → Enter order ID → View live updates.",
+"Track Order Instructions: SMS updates are sent at each delivery stage.",
+"Track Order Instructions: Email notifications are sent once delivered.",
+
+//CUSTOMER SUPPORT
+
+"Customer Support Hours: Support available 24/7 via chat.",
+"Customer Support Hours: Phone support available 9AM–6PM on business days.",
+"Customer Support Hours: Email responses may take 12–24 hours.",
+
+
+//DAMAGED PRODUCT POLICY
+
+"Damaged Product Policy: Customers must upload a photo of the damage for quick replacement.",
+"Damaged Product Policy: Claims must be filed within 48 hours of delivery.",
+"Damaged Product Policy: Replacement approval typically takes 24–48 hours.",
+"Damage Claim Policy: Missing items must be reported within 24 hours.",
+
+//PRODUCT LINES (Kept Original, SL Format)
+
+"Product: Apple iPhone 14 – 128GB/256GB, Blue/Red/Black, 1-year warranty.",
+"Product: Samsung Galaxy S23 – 256GB AMOLED Display, 12GB RAM, fast charger included.",
+"Product: Lenovo IdeaPad Slim 3 – 8GB RAM, 512GB SSD, 15.6-inch display.",
+"Product: Logitech MX Master 3 Mouse – Wireless, ergonomic, USB-C charging.",
+"Product: Google Pixel 8 – 128GB storage, AI-enhanced camera.",
+"Product: HP Pavilion 14 – 16GB RAM, touchscreen, 512GB SSD.",
+"Product: MacBook Air M2 – 8GB RAM, 256GB SSD, 18-hour battery.",
+"Product: Sony WH-1000XM5 – Noise-cancelling headphones, 30-hour battery life.",
+"Product: Anker PowerCore 20K – Fast charge power bank, dual USB outputs.",
+"Product: Dell Inspiron 15 – Intel i5, 8GB RAM, 1TB SSD.",
+
+//TROUBLESHOOTING
+
+"Troubleshooting: If an order is stuck at 'Processing', the seller has not confirmed it.",
+"Troubleshooting: If payment fails, try another method or clear browser cache.",
+"Troubleshooting: For delayed deliveries, contact support with your order ID.",
+"Troubleshooting: App crashing? Update or reinstall the app.",
+"Troubleshooting: Login issues? Use the 'Forgot Password' option.",
+"Troubleshooting: Tracking shows 'Exception'? Contact courier or support.",
+"Troubleshooting: If product is missing, report within 24 hours.",
+"Troubleshooting: If the page isn't loading, try refreshing or switching networks.",
+"Troubleshooting: COD not appearing? Item may not be eligible.",
+"Troubleshooting: Refund not received? Check bank processing times.",
+
+//FAQ (Sri Lanka Version — EXACT FORMAT YOU WANT)
+
+"FAQ: Can I change my delivery address? Yes, within the first 12 hours.",
+"FAQ: Do you offer student discounts? Yes, 10% off on electronics.",
+"FAQ: What happens if I miss a delivery? It will be re-attempted the next business day.",
+"FAQ: Do you offer gift wrapping? Yes, available for Rs. 900 per item.",
+"FAQ: Can I schedule a delivery? Yes, selected items support scheduled delivery.",
+"FAQ: Are gift cards refundable? No, gift cards are non-refundable.",
+"FAQ: Can I exchange a product? Yes, exchanges allowed within 15 days.",
+"FAQ: Do refurbished items have warranty? Yes, 6-month warranty included.",
+"FAQ: Can I track my refund? Yes, via 'Refund Details' in your account.",
+"FAQ: Is COD available for all products? Only for orders under Rs. 90,000.",
+"FAQ: Are international shipments insured? Yes, at no extra cost.",
+
+//Support Emails 
+
+"Support Email: support@shopmate.lk
+",
+"Support Email: complaints@shopmate.lk
+",
+"Support Email: billing@shopmate-pay.lk
+",
+"Support Email: returns@shopmate-returns.lk
+",
+"Support Email: warranty@shopmate-care.lk
+",
+
+//Support Phone Numbers 
+
+"Support Phone: +94-11-450-9982 (Hotline)",
+"Support Phone: +94-11-522-4411 (Technical Support)",
+"Support Phone: +94-11-712-1100 (Order & Shipping)",
+
+//Live Chat 
+
+"Live Chat: Available 24/7 through the Help Center.",
+"Live Chat: Average response time is 30–60 seconds.",
+
+//Support Ticket 
+
+"Support Ticket: Create a request via 'Help Center → Submit Ticket'.",
+"Support Ticket: Tickets are usually resolved within 24–48 hours.",
+
+//Support Languages 
+
+"Support Languages: Sinhala, Tamil, English.",
+"Support Languages: Hindi available during business hours.",
+
+//Callback Service 
+
+"Callback Service: Request a callback between 9AM–6PM (Mon–Sat).",
+
+//Services 
+
+"Service: Priority Support available for Premium Members.",
+"Service: Gift Wrapping available for Rs. 900 per item.",
+"Service: Extended Warranty available for selected electronics.",
+"Service: Installation service available for large appliances.",
+"Service: Device Setup Assistance available via video call.",
+"Service: Free recycling of old electronics with new purchase.",
+"Service: Subscription service for monthly tech accessories.",
+"Service: Price Drop Alert available for wishlisted products.",
+"Service: Same-Day Delivery available in selected Colombo areas.",
+"Service: In-store Pickup available for eligible items.",
+"Service: Packaging customization available for corporate orders.",
+"Service: Early Access to new products for VIP customers.",
+"Service: Referral Program gives Rs. 2,000 credit per referral.",
+"Service: Membership Program offers free express shipping.",
+"Service: SMS Delivery Alerts available for all orders.",
+
+//Escalation & Security 
+
+"Escalation: For unresolved issues, email escalate@shopmate-care.lk
+.",
+"Escalation: Supervisors available upon request during phone support hours.",
+"Escalation: Priority investigation opened for issues unresolved for 72 hours.",
+"Escalation: Refund escalation team reviews pending refunds over 10 days.",
+"Escalation: Delivery complaints escalated within 12 hours.",
+"Case Review: A dedicated agent is assigned for complex cases.",
+"Case Review: You can request a detailed case report via email.",
+"VIP Support: VIP members get a personal support manager.",
+"VIP Support: VIP members get 1-hour resolution for major issues.",
+"Fraud Helpdesk: fraud@shopmate-security.lk
+ (suspicious orders).",
+"Security Team: security@shopmate-security.lk
+ (account breaches).",
+"Courier Support: courier@shopmate-logistics.lk
+ for shipping delays.",
+
+//Account Support 
+
+"Account Support: Users can reset passwords via 'Forgot Password'.",
+"Account Support: Email change requests must be verified.",
+"Account Support: Two-step verification is recommended.",
+"Account Support: Account deletion requests processed in 7 days.",
+"Account Support: Login activity can be viewed under 'Security Center'.",
+
+//Service Center 
+
+"Service Center: Warranty repairs handled at authorized Sri Lankan service centers.",
+"Service Center: Repair status can be tracked via service order number.",
+"Service Center: Repairs typically take 5–10 business days.",
+"Service Center: Replacement provided if repair exceeds 20 days.",
+
+// Subscription Support 
+
+"Subscription Support: Cancel subscriptions anytime via account settings.",
+"Subscription Support: Renewal reminders sent 3 days before renewal date.",
+"Subscription Support: Subscription refunds available within 24 hours of billing.",
+
+//Notifications 
+
+"Notifications: Customers receive SMS on shipping, delivery, and delays.",
+"Notifications: Email reminders sent for pending payments.",
+"Notifications: App push notifications enabled by default.",
+
+//Follow-Up 
+
+"Follow-Up: After delivery, customers receive a feedback form.",
+"Follow-Up: Product rating reminders sent after 3 days of delivery.",
+"Follow-Up: Warranty registration reminder sent within 48 hours.",
+
+//Support Follow-Up 
+
+"Support Follow-Up: Agents follow up via email for unresolved issues.",
+"Support Follow-Up: Chat transcripts are emailed automatically.",
+"Support Follow-Up: Phone support may request feedback via SMS.",
+"Support Follow-Up: Support will retry contact 3 times for urgent issues.",
+
+//Licenses (Sri Lanka)
+
+
+"License: ShopMate Lanka Pvt Ltd registered under BR No. BR-202455.",
+"License: E-commerce operations authorized under Sri Lanka ICTA Digital Commerce Regulations.",
+"License: Import License Code (ILC): LK-IM-445782.",
+"License: Warehouse operations certified under Storage Safety License SSL-LK-2209.",
+"License: Electronics service center certified under Repair License RL-LK-78342.",
+"License: Packaging approved under Food Safety Certification FSC-LK-5521.",
+"License: Customer data handled under Data Protection Compliance ID: DPC-LK-1192.",
+"License: Customer hotline registered under Communication License CL-LK-4420.",
+"License: PCI-DSS Compliant for secure digital payments.",
+"License: Tax Registration Number: TRN-LK-55421.",
+"License: VAT Registration No: VAT-LK-113456789.",
+"License: Export License EL-LK-223440 approved for international shipping.",
+
+//Policies 
+
+"Policy: All customer data is encrypted and stored securely.",
+"Policy: We do not share customer information with third parties without consent.",
+"Policy: Product listings are updated weekly for accuracy.",
+"Policy: Orders may be subject to random verification for fraud prevention.",
+"Policy: Discounts cannot be combined unless specified.",
+"Policy: Promotional codes are valid until the mentioned expiration date.",
+"Policy: Warranty claims must include proof of purchase.",
+"Policy: Price adjustments not offered on past orders.",
+"Policy: Website content is protected under Sri Lankan copyright law.",
+"Policy: Misuse of discount programs may result in account suspension.",
+"Policy: Damaged or tampered packaging must be reported immediately.",
+"Policy: Refunds for COD orders require bank details for processing.",
+"Policy: Customer complaints must be filed within 7 days of issue.",
+"Policy: Loyalty points expire 12 months after issuance.",
+"Policy: Subscription renewals are automatically charged unless canceled.",
+
+//Addresses 
+
+"Address: ShopMate Lanka HQ, 120 Independence Avenue, Colombo 07, Sri Lanka.",
+"Address: Logistics Hub – 221 Cargo City Terminal, Katunayake, Sri Lanka.",
+"Address: Customer Care Center – 45 Queens Road, Colombo 03, Sri Lanka.",
+"Address: Corporate Office – 18 Lake Drive, Nugegoda, Sri Lanka.",
+"Address: Training Center – 12 Marine Road, Galle, Sri Lanka.",
+"Address: Returns Processing Unit – 55 Central Park, Kandy, Sri Lanka.",
+"Address: Repair & Service Depot – 40 TechPark Road, Malabe, Sri Lanka.",
+"Address: Packaging & Sorting Facility – 301 RiverSide Lane, Kelaniya, Sri Lanka.",
+"Address: Finance & Billing Office – 4th Floor, Silver Square, Colombo 01, Sri Lanka.",
+"Address: Data Security Center – 202 Cyber Tower, Battaramulla, Sri Lanka.",
+
+//Branches 
+
+"Branch: ShopMate Colombo City Center – Colombo 02, Sri Lanka.",
+"Branch: ShopMate Kandy Outlet – Kandy City Center, Sri Lanka.",
+"Branch: ShopMate Galle Branch – Lighthouse Street, Galle, Sri Lanka.",
+"Branch: ShopMate Negombo Branch – Main Street, Negombo, Sri Lanka.",
+"Branch: ShopMate Kurunegala Branch – Lake Round Road, Kurunegala, Sri Lanka.",
+"Branch: ShopMate Matara Branch – Beach Road, Matara, Sri Lanka.",
+"Branch: ShopMate Jaffna Branch – Hospital Road, Jaffna, Sri Lanka.",
+"Branch: ShopMate Anuradhapura Branch – New Town, Anuradhapura, Sri Lanka.",
+"Branch: ShopMate Batticaloa Branch – Central Road, Batticaloa, Sri Lanka.",
+"Branch: ShopMate Badulla Branch – Station Road, Badulla, Sri Lanka.",
+"Branch: ShopMate Ratnapura Branch – Gem Street, Ratnapura, Sri Lanka.",
+"Branch: ShopMate Trincomalee Branch – Harbor Road, Trincomalee, Sri Lanka.",
+"Branch: ShopMate Hambantota Branch – New City Complex, Hambantota.",
+"Branch: ShopMate Kalutara Branch – Galle Road, Kalutara, Sri Lanka.",
+"Branch: ShopMate Gampaha Branch – Yakkala Road, Gampaha, Sri Lanka.",
+
+
+
+
+
+
+
+
+{
+  "policies": {
+    "order_processing": "Orders are processed within 24 hours and shipped within 2-3 business days.",
+    "return_policy": "Customers can return most items within 30 days for a full refund.",
+    "refund_timeline": "Refunds take 5-7 business days to appear in your bank account.",
+    "shipping": "Free shipping on orders above $50. Express delivery available for an extra fee.",
+    "payment_methods": ["Visa", "Mastercard", "Amex", "PayPal", "Cash on Delivery"],
+    "warranty": "Electronics include a 1-year manufacturer warranty.",
+    "cancellation": "Orders can be canceled within 2 hours after placing."
+  },
+  "products": [
+    {
+      "name": "Apple iPhone 14",
+      "storage": ["128GB", "256GB"],
+      "colors": ["Blue", "Red", "Black"],
+      "warranty": "1 year"
+    },
+    {
+      "name": "Samsung Galaxy S23",
+      "storage": "256GB",
+      "ram": "12GB",
+      "display": "AMOLED"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can I change my delivery address?",
+      "answer": "Yes, within the first 12 hours."
+    }
+  ]
+}

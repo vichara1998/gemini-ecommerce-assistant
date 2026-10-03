@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { DataAPIClient } from "@datastax/astra-db-ts";
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import { generateEmbedding } from "@/lib/embeddings";
 
-// Environment variables (Hardcoded as requested)
-// require('dotenv').config();
+
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const ASTRA_DB_TOKEN = process.env.ASTRA_DB_TOKEN;
 const ASTRA_DB_ENDPOINT = process.env.ASTRA_DB_ENDPOINT;
@@ -27,12 +27,10 @@ export async function POST(req: NextRequest) {
             return NextResponse.json({ error: "No message provided" }, { status: 400 });
         }
 
-        // ⬇ 1. GET EMBEDDINGS
-        const embedModel = genAI.getGenerativeModel({ model: "text-embedding-004" });
-        const embedResult = await embedModel.embedContent(latestMessage);
-        const embedding = embedResult.embedding.values;
+        
+        const embedding = await generateEmbedding(latestMessage, "RETRIEVAL_QUERY");
 
-        // ⬇ 2. VECTOR SEARCH
+       
         const collection = db.collection(ASTRA_DB_COLLECTION);
         const docs = await collection
             .find({}, {
@@ -44,13 +42,13 @@ export async function POST(req: NextRequest) {
 
         const docContext = docs.map((d: any) => d.text).join("\n\n");
 
-        // ⬇ 3. CHAT HISTORY
+        
         const conversationHistory = messages
             .slice(0, -1)
             .map((msg: any) => `${msg.role === "user" ? "Customer" : "Assistant"}: ${msg.content}`)
             .join("\n");
 
-        // ⬇ 4. SYSTEM PROMPT
+      
         const systemPrompt = `You are an e-commerce assistant. Use the following knowledge base to answer customer questions accurately and professionally:
 
 Knowledge Base:
@@ -61,13 +59,13 @@ ${conversationHistory}
 
 User: ${latestMessage}`;
 
-        // ⬇ 5. GEMINI MODEL
+        
         let model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
         const result = await model.generateContent(systemPrompt);
 
         const aiReply = result.response.text();
 
-        // ⬇ 6. FINAL RESPONSE FORMAT (Returns content field)
+        
         return NextResponse.json({
             role: "assistant",
             content: aiReply
@@ -78,10 +76,9 @@ User: ${latestMessage}`;
         return NextResponse.json(
             {
                 role: "assistant",
-                content: "⚠️ Sorry, something went wrong while processing your request."
+                content: " Sorry, something went wrong while processing your request."
             },
             { status: 500 }
         );
     }
 }
-

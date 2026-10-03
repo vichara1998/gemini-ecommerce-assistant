@@ -1,8 +1,8 @@
 import "./globle.css";
 
 export const metadata = {
-  title: "E-Commerce Chatbot",
-  description: "Your virtual assistant for orders, products, shipping, and refunds.",
+  title: "Shopmate | Customer Care",
+  description: "Helpful answers for your orders, products, delivery, and returns.",
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
