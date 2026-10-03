@@ -73,6 +73,78 @@ const Home = () => {
         if (list) list.scrollTo({ top: list.scrollHeight, behavior: "smooth" });
     }, [messages, isThinking]);
 
+    useEffect(() => {
+        const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+        const root = document.documentElement;
+        let shouldReduceMotion = reducedMotion.matches;
+        let targetX = 50;
+        let targetY = 20;
+        let currentX = targetX;
+        let currentY = targetY;
+        let animationFrame: number | null = null;
+
+        const setGlowPosition = (x: number, y: number) => {
+            root.style.setProperty("--pointer-x", `${x}%`);
+            root.style.setProperty("--pointer-y", `${y}%`);
+        };
+
+        const animateGlow = () => {
+            currentX += (targetX - currentX) * 0.12;
+            currentY += (targetY - currentY) * 0.12;
+            setGlowPosition(currentX, currentY);
+
+            if (Math.abs(targetX - currentX) + Math.abs(targetY - currentY) > 0.1) {
+                animationFrame = window.requestAnimationFrame(animateGlow);
+            } else {
+                animationFrame = null;
+            }
+        };
+
+        const updateGlow = () => {
+            if (shouldReduceMotion) {
+                if (animationFrame !== null) {
+                    window.cancelAnimationFrame(animationFrame);
+                    animationFrame = null;
+                }
+                currentX = targetX;
+                currentY = targetY;
+                setGlowPosition(currentX, currentY);
+            } else if (animationFrame === null) {
+                animationFrame = window.requestAnimationFrame(animateGlow);
+            }
+        };
+
+        const moveGlow = (event: PointerEvent) => {
+            targetX = (event.clientX / window.innerWidth) * 100;
+            targetY = (event.clientY / window.innerHeight) * 100;
+            updateGlow();
+        };
+
+        const resetGlow = () => {
+            targetX = 50;
+            targetY = 20;
+            updateGlow();
+        };
+
+        const handleMotionPreference = (event: MediaQueryListEvent) => {
+            shouldReduceMotion = event.matches;
+            updateGlow();
+        };
+
+        window.addEventListener("pointermove", moveGlow, { passive: true });
+        window.addEventListener("pointerleave", resetGlow);
+        reducedMotion.addEventListener("change", handleMotionPreference);
+
+        return () => {
+            window.removeEventListener("pointermove", moveGlow);
+            window.removeEventListener("pointerleave", resetGlow);
+            reducedMotion.removeEventListener("change", handleMotionPreference);
+            if (animationFrame !== null) window.cancelAnimationFrame(animationFrame);
+            root.style.removeProperty("--pointer-x");
+            root.style.removeProperty("--pointer-y");
+        };
+    }, []);
+
     const sendMessage = async (content: string) => {
         const userMessage: Message = {
             id: uuid(),
