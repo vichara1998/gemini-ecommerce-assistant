@@ -21,7 +21,7 @@ Google Gemini to draft a reply.
 connected to live orders, customer accounts, or current inventory, so it
 cannot verify an order status or stock level.
 
-## ✨ What it does
+## --// What it does //--
 
 - 💬 Answers customer questions using retrieved store information
 - 🧠 Uses Google Gemini for embeddings and response generation
