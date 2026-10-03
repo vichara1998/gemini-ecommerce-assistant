@@ -1,67 +1,48 @@
-# Shop-AI Assist
+# 🛍️ Shop-AI Assist
 
-Shop-AI Assist is a customer support chat application for an online store. It
-uses a prepared product and policy knowledge base to help answer questions
-about products, payments, delivery, returns, and store policies.
+<p align="center">
+  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-16-111827?style=for-the-badge&logo=next.js&logoColor=white">
+  <img alt="React" src="https://img.shields.io/badge/React-19-149ECA?style=for-the-badge&logo=react&logoColor=white">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+  <img alt="Google Gemini" src="https://img.shields.io/badge/Google_Gemini-AI-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white">
+  <img alt="Astra DB" src="https://img.shields.io/badge/DataStax-Astra_DB-00A986?style=for-the-badge">
+</p>
 
-The application uses Next.js and React for the web interface, Google Gemini
-for embeddings and answer generation, and Astra DB for vector search.
+<p align="center"><em>Store support for products, delivery, returns, payments, and policies.</em></p>
 
-## What the application does
+---
 
-- Provides a responsive customer support chat interface
-- Offers common question prompts for orders, returns, delivery, products, and payments
-- Lets customers type messages and send with Enter, or use Shift and Enter for a new line
-- Shows message times and an assistant typing indicator
-- Lets customers copy assistant replies or start a new conversation
-- Follows pointer movement with a background glow and slowly moving lines
-- Uses direct pointer positioning when reduced motion is enabled and shortens other interface transitions. The ambient line drift continues.
-- Retrieves up to five relevant entries from the Astra DB knowledge base for each question
-- Uses Gemini to write a concise answer grounded in the retrieved store information
+Shop-AI Assist is a customer-support chat app for an online store. Customers
+can ask about products, delivery, returns, payments, and store policies. The
+app retrieves relevant entries from an Astra DB knowledge base and uses
+Google Gemini to draft a reply.
 
-## Current limitations
+> **Current scope:** The app uses a prepared product and policy dataset. It is not
+connected to live orders, customer accounts, or current inventory, so it
+cannot verify an order status or stock level.
 
-The application uses the static product and policy entries in `dataset.ts`. It
-does not connect to a commerce platform, order system, customer account, or
-live inventory service. It cannot look up an individual order or confirm
-current stock, prices, or account details. The assistant is instructed to say
-when the supplied store information does not answer a question.
+## ✨ What it does
 
-Conversation messages are held in browser memory. They are not saved between
-page visits, and there is no sign-in or customer profile.
+- 💬 Answers customer questions using retrieved store information
+- 🧠 Uses Google Gemini for embeddings and response generation
+- 🔎 Searches product and policy content stored in Astra DB
+- 🛡️ Validates chat messages and limits request size and history
 
-## How a chat request works
+## 🧰 Requirements
 
-1. The browser sends the latest conversation messages to the chat API.
-2. The API checks that the request contains between one and twenty valid
-   messages. Each message must contain non-empty text of no more than 2,000
-   characters.
-3. The latest customer message is converted to a 768-dimensional query
-   embedding with Google's `gemini-embedding-001` model.
-4. Astra DB returns up to five matching knowledge base entries.
-5. The chat API sends those entries and the recent conversation to
-   `gemini-2.5-flash` to draft a response.
-6. The browser displays the reply in the conversation.
+- 🟢 Node.js 20.9 or later
+- 🗄️ An Astra DB database and application token
+- 🔑 A Google Gemini API key
 
-Invalid chat requests receive an HTTP 400 response. If embedding, database, or
-answer generation fails, the API logs the error on the server and returns an
-HTTP 503 response.
+## 🚀 Set up
 
-## Requirements
-
-- Node.js 20.9 or newer
-- An Astra DB database with a database token
-- A Google Gemini API key
-
-## Local setup
-
-Install the project dependencies.
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-Create a `.env` file in the project root.
+Create a `.env` file in the project root with your credentials:
 
 ```dotenv
 GEMINI_API_KEY=your_gemini_api_key
@@ -71,68 +52,48 @@ ASTRA_DB_NAMESPACE=your_astra_db_namespace
 ASTRA_DB_COLLECTION=ecommerce_chatbot_vectors
 ```
 
-Keep this file out of version control. Never put private API keys or database
-credentials in browser code.
+🔒 Keep `.env` out of version control. Do not put API keys in client-side code.
 
-Start the development server.
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Open a browser and visit localhost on port 3000.
+Then open [http://localhost:3000](http://localhost:3000).
 
-## Load the store information
+## 📚 Load the knowledge base
 
-The source entries for products and store policies are in `dataset.ts`. To
-split them into searchable chunks and add them to Astra DB, run the seed
-command.
+With the environment variables set, run:
 
 ```bash
 npm run seed
 ```
 
-The seeder uses chunks of up to 300 characters with 50 characters of overlap.
-It creates 768-dimensional document embeddings with
-`gemini-embedding-001` and stores each chunk in the configured Astra DB
-collection.
+The script splits the entries in `dataset.ts` into chunks and stores them as
+768-dimensional vectors in the configured Astra DB collection. Embeddings are
+created with Google's `gemini-embedding-001` model.
 
-The seed command adds records and does not clear the collection first. Running
-it again can create duplicate records. Before reseeding, remove old entries if
-you have changed the dataset or embedding model. All vectors in a collection
-used for search must have the same dimension and come from a compatible
-embedding model.
+The seed script adds records; it does not clear the collection first. Running
+it again can insert duplicate chunks. If the collection contains vectors made
+with another embedding model or dimension, replace those records before
+seeding so searches use a consistent vector space.
 
-## Project commands
+## 🧪 Available commands
 
 ```bash
-npm run dev
-npm run build
-npm run start
-npm run lint
-npm run seed
+npm run dev    # Start the development server
+npm run build  # Create a production build
+npm run start  # Serve the production build
+npm run lint   # Run ESLint
+npm run seed   # Add the knowledge-base entries to Astra DB
 ```
 
-Use the development command while working on the application. Build creates a
-production version, and start serves that build. Lint runs ESLint. Seed loads
-the knowledge base into Astra DB.
+## 🗂️ Project structure
 
-## Main files
-
-- `app/page.tsx` contains the chat interface and browser-side conversation state
-- `app/globle.css` contains the interface styles, responsive layout, and background motion
-- `app/components/Bubble.tsx` renders user and assistant messages
-- `app/components/LoadingBubble.tsx` renders the typing indicator
-- `app/api/chat/route.ts` validates requests, retrieves context, and generates replies
-- `dataset.ts` contains the product and policy reference entries
-- `lib/embeddings.ts` configures Gemini embeddings and checks their dimensions
-- `scripts/loadDB.ts` creates or opens the Astra DB collection and loads the dataset
-
-## Technology
-
-- Next.js 16 and React 19
-- TypeScript
-- Google Gemini for text embeddings and response generation
-- DataStax Astra DB for vector storage and retrieval
-- LangChain text splitting for preparing knowledge base entries
-- React Markdown for rendering formatted assistant replies
+- `app/` — Next.js pages, chat interface, and API route
+- `app/api/chat/route.ts` — validates chat requests, retrieves context, and
+  generates replies
+- `dataset.ts` — product and store-policy entries for the knowledge base
+- `lib/embeddings.ts` — shared Gemini embedding configuration
+- `scripts/loadDB.ts` — creates the Astra DB collection and loads the dataset
