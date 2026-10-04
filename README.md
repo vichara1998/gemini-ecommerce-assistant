@@ -17,11 +17,11 @@ can ask about products, delivery, returns, payments, and store policies. The
 app retrieves relevant entries from an Astra DB knowledge base and uses
 Google Gemini to draft a reply.
 
-> **Current scope:** The app uses a prepared product and policy dataset. It is not
+> **Current scope-** The app uses a prepared product and policy dataset. It is not
 connected to live orders, customer accounts, or current inventory, so it
 cannot verify an order status or stock level.
 
-## ✨ What it does
+## --// What it does //--
 
 - 💬 Answers customer questions using retrieved store information
 - 🧠 Uses Google Gemini for embeddings and response generation
