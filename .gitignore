@@ -42,3 +42,6 @@ next-env.d.ts
 
 # loadDB
 /scripts/loadDB.ts
+
+# screenshots
+/portfolio-screenshots/
